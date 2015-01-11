@@ -1,3 +1,5 @@
+#!/usr/bin/python2.7
+
 import socket
 import os
 import struct
@@ -7,10 +9,10 @@ from netaddr import IPNetwork,IPAddress
 from ctypes import *
 
 # host to listen on
-host   = "192.168.0.187"
+host   = "0.0.0.0"
 
 # subnet to target
-subnet = "192.168.0.0/24"
+subnet = "172.27.1.0/24"
 
 # magic we'll check ICMP responses for
 magic_message = "PYTHONRULES!"
