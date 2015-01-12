@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import socket
 import os
 import struct
@@ -6,7 +8,7 @@ import threading
 from ctypes import *
 
 # host to listen on
-host   = "192.168.0.187"
+host   = "0.0.0.0"
 
                 
 class IP(Structure):
